@@ -50,11 +50,11 @@ public class RockPaperScissors
         else
         {
             //Your Choice
-            System.out.println("You chose " + Choices[choice - 1]);
+            System.out.println("You chose " + Choices[choice]);
 
             //Computer Choice
             int randomChoice = rand.nextInt(3);
-            System.out.println("Computer chose " + Choices[randomChoice - 1]);
+            System.out.println("Computer chose " + Choices[randomChoice]);
 
             //Winner CODE
             if (choice == randomChoice)
