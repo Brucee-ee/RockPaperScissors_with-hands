@@ -55,6 +55,21 @@ public class RockPaperScissors
             //Computer Choice
             int randomChoice = rand.nextInt(3);
             System.out.println("Computer chose " + Choices[randomChoice - 1]);
+
+            //Winner CODE
+            if (choice == randomChoice)
+            {
+                System.out.println("Draw!");
+            } else if (((choice == 0 && randomChoice == 2) ||
+                    (choice == 1 && randomChoice == 0) ||
+                    (choice == 2 && randomChoice == 1)))
+            {
+                System.out.println("Congratulations!");
+            } else
+            {
+                System.out.println("Unlucky!");
+            }
         }
+        sc.close();
     }
 }
