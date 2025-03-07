@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RockPaperScissors
 {
-    private static final String ROCK_PAPER = """
+    private static final String ROCK = """
             _______
         ---'   ____)
               (_____)
@@ -35,7 +35,7 @@ public class RockPaperScissors
         Random rand = new Random();
 
         //Choices (Array Form)
-        String[] Choices = {"Rock", "Paper", "Scissors"};
+        String[] Choices = {ROCK, PAPER, SCISSORS};
 
         //Get CHOICE
         System.out.print(" Type 0 for Rock, 1 for Paper, or 2 for Scissors ");
