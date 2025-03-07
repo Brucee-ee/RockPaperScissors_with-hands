@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissors
@@ -27,4 +28,20 @@ public class RockPaperScissors
               (____)
         ---.__(___)
         """;
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+
+        //Choices (Array Form)
+        String[] Choices = {"Rock", "Paper", "Scissors"};
+
+        //Get CHOICE
+        System.out.print(" Type 0 for Rock, 1 for Paper, or 2 for Scissors ");
+        System.out.print("Enter Choice: ");
+        int choice = Integer.parseInt(sc.nextLine());
+
+        
+    }
 }
