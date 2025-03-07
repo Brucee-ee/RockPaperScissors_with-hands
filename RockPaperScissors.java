@@ -42,6 +42,19 @@ public class RockPaperScissors
         System.out.print("Enter Choice: ");
         int choice = Integer.parseInt(sc.nextLine());
 
-        
+        //Validation
+        if (choice < 0 || choice >= 3)
+        {
+            System.out.println("Invalid Choice");
+        }
+        else
+        {
+            //Your Choice
+            System.out.println("You chose " + Choices[choice - 1]);
+
+            //Computer Choice
+            int randomChoice = rand.nextInt(3);
+            System.out.println("Computer chose " + Choices[randomChoice - 1]);
+        }
     }
 }
